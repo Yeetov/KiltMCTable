@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Mods Support Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .dependencies-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .dependencies-list li {
+            margin-bottom: 5px;
+        }
+        .dependency-name {
+            font-weight: bold;
+        }
+        .not-supported {
+            color: red;
+            font-weight: bold;
+        }
+        .disclaimer {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .mod-logo {
+            width: 32px;
+            height: 32px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .kiltmc-logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.ibb.co/pWk9NLK/Kilt-Logo-with-Name.png" alt="KiltMC Logo" class="kiltmc-logo">
+
+    <div class="disclaimer">
+        <p><strong>Note:</strong> This is an <strong>experimental</strong> and <strong>unofficial test table</strong> for mods tested with <strong>KiltMC</strong>. Do not harass the developers to add mod compatibility as they are under no obligation to support specific mods.</p>
+        <p>Some mods, like <strong>Create</strong>, will never be supported as there is already a Fabric port available:</p>
+        <ul>
+            <li><a href="https://www.curseforge.com/minecraft/mc-mods/create-fabric" target="_blank">Fabric version of Create</a></li>
+        </ul>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mod Name</th>
+                <th>Mod Version</th>
+                <th>KiltMC Version Tested</th>
+                <th>Status</th>
+                <th>Date Tested (DD/MM/YYYY)</th>
+                <th>Dependencies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Mod Name">
+                    <img src="https://media.forgecdn.net/avatars/thumbnails/543/777/256/256/637874731161865623.jpeg" alt="Alex's Mobs Logo" class="mod-logo">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/alexs-mobs/files" target="_blank">Alex's Mobs</a>
+                </td>
+                <td data-label="Mod Version">All Versions</td>
+                <td data-label="KiltMC Version Tested">
+                    <a href="https://github.com/KiltMC/Kilt/commit/4e42644bf10870ff6668c47be27e8db1b8638969" target="_blank">
+                        4e42644bf10870ff6668c47be27e8db1b8638969
+                    </a>
+                </td>
+                <td data-label="Status" class="not-supported">Not Supported</td>
+                <td data-label="Date Tested">02/01/2025</td>
+                <td data-label="Dependencies">
+                    <ul class="dependencies-list">
+                        <li>
+                            <span class="dependency-name">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/citadel/files" target="_blank">Citadel</a>:
+                            </span> 
+                            Not supported for any version
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td data-label="Mod Name">
+                    <img src="https://media.forgecdn.net/avatars/thumbnails/621/410/256/256/638011989737548665.png" alt="Ghost Logo" class="mod-logo">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/ghost/files" target="_blank">Ghost</a>
+                </td>
+                <td data-label="Mod Version">All Versions</td>
+                <td data-label="KiltMC Version Tested">
+                    <a href="https://github.com/KiltMC/Kilt/commit/4e42644bf10870ff6668c47be27e8db1b8638969" target="_blank">
+                        4e42644bf10870ff6668c47be27e8db1b8638969
+                    </a>
+                </td>
+                <td data-label="Status">Supported</td>
+                <td data-label="Date Tested">02/01/2025</td>
+                <td data-label="Dependencies">
+                    <ul class="dependencies-list">
+                        <li>
+                            <span class="dependency-name">
+                                <a href="https://www.curseforge.com/minecraft/mc-mods/geckolib/files/all?page=1&pageSize=20&gameVersionTypeId=4" target="_blank">Geckolib (Fabric)</a>:
+                            </span> 
+                            Works with KiltMC
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
